@@ -57,7 +57,7 @@ def main():
             st.write("Rmse:",acc)
             st.write("RSquare:",r2_score(y_test,y_pred))
             st.write("Input Parameters",x_test)
-            st.write("Charges",result)
+            st.write("Term Deposite Chances",result)
            
             
     # Random Forest 
@@ -81,7 +81,7 @@ def main():
             st.write("Rmse:",acc1)
             st.write("RSquare:",r2_score(y_test,y_pred_rf))
             st.write("Input Parameters",x_test)
-            st.write("Charges",result)
+            st.write("Term Deposite Chances",result)
             
 #      # Linear Regression 
     if Regressor=="LR":
@@ -100,7 +100,7 @@ def main():
             st.write("Rmse:",acc_lr)
             st.write("RSquare:",r2_score(y_test,y_pred_lr))
             st.write("Input Parameters",x_test)
-            st.write("Charges",y_pred_lr)
+            st.write("Term Deposite Chances",y_pred_lr)
             
     if st.sidebar.checkbox("Show Training data",False):
         st.subheader("Term Depsoite")
